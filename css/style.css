@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flex_column_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    color: #db426c;
+    height: 100vh;
+    padding: 10px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/17/19/19/paris-5310783_1280.jpg');
+    background-position: 38%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tytul {
+    background-color: #fff3ba9c;
+}
+
+footer {
+    text-align: center;
+    background-color: #e896b4;
+    color: black;
+}
+
+button.button {
+    max-width: 100%;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #76cb93;
+    background-color: #76cb93;
+    color: #fcfeff;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #db426c;
+    border: #db426c;
+    color: #fcfeff;
+    transition: 0.1s;
+}
+
+h2.h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+section.comments {
+    padding: 10px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/04/11/13/59/paris-4119828_1280.jpg');
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #b4e4cb;
+}
+
+section.comments .single_comment {
+    background-color: #db426bb0;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+section.comments .single_comment p:first-child {
+    text-align: center;
+    line-height: 1.3;
+}
+
+section.comments .single_comment p:last-child {
+    font-weight: bold;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+section.map {
+    padding: 10px;
+}
+
+section.map iframe {
+    width: 100%;
+}
+
+section.places_to_see {
+    padding: 10px;
+}
+
+section.places_to_see div.place p {
+    padding: 0px 15px 15px 15px;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+div.place {
+    padding: 10px;
+}
+
+div.place img {
+    display: block;
+    width: 100%;
+}
+
+section.contacts {
+    padding: 10px;
+}
+
+div.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div.contact:last-child{
+    margin-bottom: 0;
+}
+
+div.contact i {
+    font-size: 45px;
+    color: #db426c;
+    border: 5px solid #db426c;
+    padding: 10px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+div.all_contacts {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+div.contact p {
+    color: #db426c;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+}
+
+section.newsletter {
+    background-color: #e896b4;
+    padding: 10px 20px;
+}
+
+section.newsletter h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px 0;
+}
+
+section.newsletter form {
+    margin: 10px 0;
+}
+
+section.newsletter form .newsletter_input {
+    display: flex;
+    flex-direction: column;
+}
+
+section.newsletter form .newsletter_input input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 0 8px 8px;
+    border: none;
+}
+
+section.FAQ {
+    padding: 10px;
+}
+
+div.accordion {
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 728px;
+}
+
+div.box {
+    margin: 10px;
+    border-top: 1px solid black;
+}
+
+button.accordion_button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.accordion_button:hover {
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+}
+
+.active_box {
+    display: block;
+}
+
+.active_arrow {
+    transform: rotate(-180deg);
+}
